@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+    <link rel="stylesheet" href="styles_recipe.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        <input type="text" id="search-input" placeholder="Search for recipes">
+        <button id="show-favorites-btn">Show Favorites</button>
+        <div id="suggestions"></div>
+    </header>
+    
+    <!-- Recipe container to display search results -->
+    <main id="recipe-container"></main>
+    
+    <!-- Favorites container for saved recipes -->
+    <div id="favorites-container" style="display: none;"></div>
+    
+    <!-- Modal for displaying detailed recipe information -->
+    <div id="recipe-modal" style="display: none;">
+        <div id="recipe-detail"></div>
+        <button id="close-modal">Close</button>
+    </div>
+    
+    <script src="app_recipe.js"></script>
+</body>
+</html>

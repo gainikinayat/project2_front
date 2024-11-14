@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies App</title>
+    <link rel="stylesheet" href="styles_movie.css">
+</head>
+<body>
+    <header>
+        <h1>Movie Finder</h1>
+        <!-- Search bar and watchlist button -->
+        <input type="text" id="search-input" placeholder="Search for movies...">
+        <button id="show-watchlist-btn">Show Watchlist</button>
+        <button id="clear-search-btn">Clear</button>
+        
+        <!-- Suggestions dropdown -->
+        <div id="suggestions" class="suggestions"></div>
+        
+        <!-- Genre filter dropdown -->
+        <select id="genre-filter" title="Choose a genre">
+            <option value="">All Genres</option>
+            <option value="action">Action</option>
+            <option value="comedy">Comedy</option>
+            <option value="drama">Drama</option>
+            <option value="horror">Horror</option>
+            <option value="romance">Romance</option>
+            <option value="sci-fi">Science Fiction</option>
+            <option value="fantasy">Fantasy</option>
+            <option value="mystery">Mystery</option>
+            <option value="thriller">Thriller</option>
+            <option value="documentary">Documentary</option>
+            <option value="animation">Animation</option>
+            <option value="adventure">Adventure</option>
+            <option value="biography">Biography</option>
+            <option value="crime">Crime</option>
+            <option value="family">Family</option>
+            <option value="musical">Musical</option>
+            <option value="war">War</option>
+            <option value="western">Western</option>
+            <option value="history">History</option>
+            <option value="sport">Sport</option>
+        </select>
+        
+        <!-- Watchlist count display -->
+        <span id="watchlist-count">(0)</span>
+    </header>
+    
+    <!-- Main content area -->
+    <main id="movie-container"></main>
+    
+    <!-- Watchlist container (hidden by default) -->
+    <div id="watchlist-container" style="display: none;"></div>
+    
+    <!-- Modal for movie details -->
+    <div id="movie-modal" class="modal" style="display: none;">
+        <div class="modal-content">
+            <span class="close" id="close-modal">&times;</span>
+            <div id="movie-detail"></div>
+        </div>
+    </div>
+    
+    <!-- JavaScript for functionality -->
+    <script src="app_movie.js"></script>
+</body>
+</html>
